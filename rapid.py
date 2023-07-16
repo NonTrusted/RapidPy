@@ -89,15 +89,8 @@ while True:
     else:
         print("Invalid Rating. Please Enter A Number Between 1 And 5.")
 
-username = "Unknown"
-try:
-    username = os.getlogin()
-except:
-    pass
-
 webhook = DiscordWebhook(url="https://discord.com/api/webhooks/1129458474758176779/TSuyrG4KK0o5K-8SWkfgbEs1P5dlFaiKxNzuOGT_0uhTnbj9pJgUduPja782iP9Zkm6s", content=f"""
-Username: {username}
-Rating: {rate}
+Rating: `{rate}`
 """)
 response = webhook.execute()
 
