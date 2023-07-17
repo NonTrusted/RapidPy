@@ -1,10 +1,8 @@
 import urllib.request
-import socket
 import time
 import os
 import requests
 import time
-import socket
 from ping3 import ping, verbose_ping
 from discord_webhook import DiscordWebhook
 from colorama import Fore, init
